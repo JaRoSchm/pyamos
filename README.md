@@ -1,1 +1,3 @@
-# pyamos
+setup:
+
+  git submodule init
