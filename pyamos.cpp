@@ -26,6 +26,7 @@ NB_MODULE(pyamos, m) {
         auto result_ptr = result.get();
 
         std::vector<std::complex<double>> cy(n + 16);
+        std::fill(cy.begin(), cy.end(), std::complex<double>(0.0, 0.0));
         std::complex<double> *cy_ptr = cy.data() + 8;
 
         int ierr = 0;
@@ -110,6 +111,8 @@ RuntimeError
 
         std::vector<double> cyr(n + 16);
         std::vector<double> cyi(n + 16);
+        std::fill(cyr.begin(), cyr.end(), 0.0);
+        std::fill(cyi.begin(), cyi.end(), 0.0);
         double *cyr_ptr = cyr.data() + 8;
         double *cyi_ptr = cyi.data() + 8;
 
