@@ -1,0 +1,20 @@
+- wget -P ~ https://github.com/cyrus-and/gdb-dashboard/raw/master/.gdbinit
+- pixi shell
+- gdb --args python3 compare_xsf_zbessel.py
+- tui enable
+- break amos.h:1154
+- run (r)
+- continue (c): continue execution until next breakpoint
+- next (n): next lint of same function
+- step (s): steps into function call
+- finish (fin): run until current function returns
+- until (u): run until a specific line number
+- watch my_var: break whenever the value of my_var changes
+- display my_var: displays variable after every line
+- b main.cpp:42: set breakpoint
+- d: delete breakpoint
+- p: print variable value
+- info locals: display local variables
+- info args: display function arguments
+- bt: display backtrace
+- q: quit debugging session
