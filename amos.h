@@ -6346,8 +6346,7 @@ namespace amos {
                 // REFINE ESTIMATE AND TEST
                 //
                 aphi = std::abs(phid);
-                aarg = std::abs(argd);
-                rs1 += std::log(aphi) - 0.25 * std::log(aarg) - aic;
+                rs1 += std::log(aphi);
                 if (std::fabs(rs1) < elim) {
                     goto L120;
                 }
