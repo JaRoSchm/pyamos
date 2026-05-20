@@ -1141,7 +1141,7 @@ namespace amos {
                 return nz;
             }
             ck = std::exp(cz);
-            for (int i = 0; i < (nn + 1); i++) {
+            for (int i = 0; i < nn; i++) {
                 y[i] *= ck;
             }
             /* 90 */
