@@ -5901,7 +5901,7 @@ namespace amos {
                 return -1;
             }
             nz = n;
-            for (i = 0; i < (n + 1); i++) {
+            for (i = 0; i < n; i++) {
                 y[i] = 0.0;
             }
             return nz;
