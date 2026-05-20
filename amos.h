@@ -1773,7 +1773,7 @@ namespace amos {
             *ierr = 2;
             return 0;
         }
-        if (xx > 0.0) {
+        if (xx >= 0.0) {
             return nz;
         }
         //
